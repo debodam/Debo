@@ -1,0 +1,107 @@
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+  margin-bottom: 0;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../../Assets/side_profile.png");
+}
+
+.hero-content {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  height: 40%;
+  font-family: var(--font-family3);
+  color: white;
+  font-size: 100px;
+  padding-bottom: 2rem;
+  font-weight: bold;
+}
+
+.arrow-container {
+  position: absolute;
+  top: 80%; /* Adjust this value as needed to make the arrow more visible */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px; /* Adjust the width of the arrow container */
+  height: 50px; /* Adjust the height of the arrow container */
+  text-align: center;
+}
+
+.about-content {
+  background: url("../../Assets/struckaxiom.webp");
+  width: 100%;
+  height: 40%;
+  text-align: right;
+  font-family: var(--font-family3);
+  margin-top: 0;
+  padding: 2rem; /* Added padding to create space inside the about-content */
+}
+
+.about-heading {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 2rem;
+  color: var(--font-family4);
+}
+
+.about-text {
+  flex: 1;
+  text-align: left;
+}
+
+.about-text h1 {
+  flex: 1;
+  font-size: 90px;
+  line-height: 40px;
+  font-weight: 600;
+  font-family: var(--font-family5);
+  color: rgb(140, 140, 115);
+  text-align: right;
+  margin-left: 2rem;
+  padding-bottom: 2rem;
+  padding-bottom: 2rem;
+}
+
+.about-text p {
+  flex: 1;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 600;
+  font-family: var(--font-family5);
+  color: #111;
+  text-align: right;
+  margin-left: 2rem;
+}
+
+.about-heading img {
+  flex: 1;
+  max-width: 45%;
+  max-height: 50%;
+  border-radius: 20px;
+}
+
+.projects-content {
+  background: url("../../Assets/struckaxiom.webp");
+  width: 100%;
+  height: 40%;
+  text-align: right;
+  font-family: var(--font-family3);
+  margin-top: 0;
+  padding: 2rem; /* Added padding to create space inside the about-content */
+}
