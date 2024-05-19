@@ -50,16 +50,6 @@ body::-webkit-scrollbar {
   }
 }
 
-.hero .arrow-container {
-  position: absolute;
-  top: 80%; /* Adjust this value as needed to make the arrow more visible */
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50px; /* Adjust the width of the arrow container */
-  height: 50px; /* Adjust the height of the arrow container */
-  text-align: center;
-}
-
 .hero-location {
   left: 0; /* Position on the far left */
   transform: translateY(-50%);
@@ -107,64 +97,96 @@ body::-webkit-scrollbar {
 }
 
 .about-content {
-  width: 100%;
-  height: 40%;
-  text-align: right;
-  font-family: var(--font-family3);
-  margin-top: 0;
-  padding: 2rem; /* Added padding to create space inside the about-content */
-}
-
-.about-heading {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 2rem;
-  color: var(--font-family4);
+  padding-top: 5%; /* Add top padding */
+  padding-bottom: 50px; /* Add bottom padding */
+  display: flex; /* Use flexbox layout */
+  justify-content: space-between; /* Distribute items evenly along the main axis */
 }
 
 .about-text {
-  flex: 1;
+  flex: 1; /* Allow each text box to grow and shrink to fill available space */
+  padding: 20px; /* Add padding to each text box */
+  padding-left: 10%;
+  padding-right: 5%;
+  text-align: center; /* Center align the text */
+}
+
+.about-text-2 {
+  display: flex; /* Use flexbox to center content vertically and horizontally */
+  flex-direction: column; /* Align items vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: left; /* Center content horizontally */
+  flex: 1; /* Allow each text box to grow and shrink to fill available space */
+  padding: 20px; /* Add padding to each text box */
+  text-align: center; /* Center align the text */
+  padding-right: 10%;
+}
+
+.first-paragraph {
+  font-family: var(--font-family);
+  font-size: 50px; /* Set the font size */
+  line-height: 1.5; /* Set the line height for better readability */
+  color: #333; /* Set the text color */
+  margin: 0; /* Remove default margin from paragraphs */
+  padding-left: 75px; /* Add left padding to the first paragraph */
   text-align: left;
 }
 
-.about-text h1 {
-  flex: 1;
-  font-size: 90px;
-  line-height: 40px;
-  font-weight: 600;
-  font-family: var(--font-family5);
-  color: rgb(140, 140, 115);
-  text-align: right;
-  margin-left: 2rem;
-  padding-bottom: 2rem;
+.second-paragraph {
+  font-family: var(--font-family);
+  font-size: 30px; /* Set the font size */
+  line-height: 1.5; /* Set the line height for better readability */
+  color: #333; /* Set the text color */
+  margin: 0; /* Remove default margin from paragraphs */
+  text-align: left;
+  padding-bottom: 10%;
 }
 
-.about-text p {
-  flex: 1;
-  font-size: 30px;
-  line-height: 40px;
-  font-weight: 600;
-  font-family: var(--font-family5);
-  color: #111;
-  text-align: right;
-  margin-left: 2rem;
+.button {
+  width: 200px; /* Set the width of the circle */
+  height: 200px; /* Set the height of the circle */
+  border-radius: 50%; /* Make it a circle */
+  background-color: #151515; /* Set button background color */
+  color: white; /* Set button text color */
+  border: none; /* Remove button border */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  display: flex; /* Center the content vertically and horizontally */
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease; /* Add transition effect */
+  font-size: 20px;
 }
 
-.about-heading img {
-  flex: 1;
-  max-width: 45%;
-  max-height: 50%;
-  border-radius: 20px;
+.button:hover {
+  background-color: #76abae; /* Change button background color on hover */
+}
+
+.section-divider {
+  width: 80%; /* Adjust the width of the line break */
+  margin: 50px auto; /* Adjust top and bottom margin to position the line */
+  padding: 0 10%; /* Adjust the padding to shorten the line evenly on both sides */
+  border: none;
+  border-top: 2px solid #ccc;
 }
 
 .projects-content {
-  background: url("../../Assets/struckaxiom.webp");
-  width: 100%;
-  height: 40%;
-  text-align: right;
-  font-family: var(--font-family3);
-  margin-top: 0;
-  padding: 2rem; /* Added padding to create space inside the about-content */
+  padding-bottom: 50px; /* Add bottom padding */
+  display: flex; /* Use flexbox layout */
+  justify-content: space-between; /* Distribute items evenly along the main axis */
+}
+
+.projects-heading {
+  font-family: var(--font-family);
+  font-size: 50px; /* Set the font size */
+  line-height: 1.5; /* Set the line height for better readability */
+  color: #333; /* Set the text color */
+  margin: 0; /* Remove default margin from paragraphs */
+  padding-left: 75px; /* Add left padding to the first paragraph */
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.exponent {
+  font-size: 0.6em; /* Adjust the size of the exponent */
+  vertical-align: super; /* Align the exponent as superscript */
 }
