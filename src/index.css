@@ -2,12 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@500&family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@500&family=Open+Sans&family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 :root {
   --font-family: "Manrope", sans-serif;
   --font-family2: "Open Sans", sans-serif;
   --font-family3: "Arimo", sans-serif;
   --font-family4: "Roboto", sans-serif;
+  --font-family5: "Montserrat, sans-serif";
 
   --gradient-text: linear-gradient(89.97deg, #004bff 48%, #f7f7f7 60%);
   --gradient-text2: linear-gradient(89.97deg, #f7f7f7 30%, #004bff 60%);

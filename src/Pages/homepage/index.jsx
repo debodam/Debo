@@ -1,6 +1,9 @@
+import { faGlobe } from "@fortawesome/free-solid-svg-icons"; // Import the globe icon
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import Portrait from "../../Assets/hero_pic.jpg";
 import Navbar from "../../Components/navbar";
+
 import "./style.css";
 
 const Homepage = () => {
@@ -9,9 +12,22 @@ const Homepage = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <div className="hero section__padding">
+      <div className="hero ">
         <div className="hero-content">
-          <h1>DEBOJEET DAM</h1>
+          <div className="hero-location">
+            <p>Located in Calgary</p>
+            <span className="icon-wrapper">
+              <FontAwesomeIcon
+                icon={faGlobe}
+                style={{ fontSize: "0.5em" }}
+                className="fa-icon globe-icon"
+              />
+            </span>
+          </div>
+          {/* <div className="hero-career">
+            <p>Software Engineer</p>
+          </div> */}
+          <h1>Debojeet Dam</h1>
           {/* <p>SOFTWARE ENGINEER | SCHULICH SCHOOL OF ENGINEERING</p> */}
         </div>
       </div>
