@@ -14,7 +14,7 @@
 .text-style {
   font-weight: 600;
   text-transform: uppercase;
-  color: #a0aec0;
+  color: #333; /* Adjust text color for visibility */
 }
 
 .carousel-section {
@@ -25,11 +25,12 @@
 
 .sticky-container {
   position: sticky;
-  top: 0;
+  top: 0; /* Add top to ensure stickiness */
   display: flex;
   height: 100vh;
   align-items: center;
   overflow: hidden;
+  background-color: #333;
 }
 
 .card-container {
@@ -39,10 +40,11 @@
 
 .card {
   position: relative;
-  height: 450px;
-  width: 450px;
+  height: 800px;
+  width: 800px;
   overflow: hidden;
-  background-color: #edf2f7;
+  background-color: #eeeeee;
+  font-family: var(--font-family);
 }
 
 .card-image {
@@ -76,4 +78,18 @@
   text-transform: uppercase;
   color: #fff;
   backdrop-filter: blur(20px);
+}
+
+.involvement-header {
+  padding-bottom: 50px; /* Add bottom padding */
+  display: flex; /* Use flexbox layout */
+  justify-content: space-between; /* Distribute items evenly along the main axis */
+  font-family: var(--font-family);
+  font-size: 50px; /* Set the font size */
+  line-height: 1.5; /* Set the line height for better readability */
+  color: #333; /* Set the text color */
+  margin: 0; /* Remove default margin from paragraphs */
+  padding-left: 75px; /* Add left padding to the first paragraph */
+  text-align: left;
+  text-transform: uppercase;
 }

@@ -1,20 +1,16 @@
-// Example.js
-
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
+import ACRobotics from "../../Assets/ACRobotics.jpg";
+import ESS from "../../Assets/ESS.jpg";
+import StudentUnion from "../../Assets/StudentUnion.jpg";
+import WEC from "../../Assets/WEC.JPG";
 import pic from "../../Assets/side_profile.png";
-import "./style.css"; // Import your CSS file
+import "./style.css";
 
 const Example = () => {
   return (
     <div className="background">
-      <div className="flex-container">
-        <span className="text-style">Scroll down</span>
-      </div>
       <HorizontalScrollCarousel />
-      <div className="flex-container">
-        <span className="text-style">Scroll up</span>
-      </div>
     </div>
   );
 };
@@ -25,7 +21,7 @@ const HorizontalScrollCarousel = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-95%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-50%"]);
 
   return (
     <section ref={targetRef} className="carousel-section">
@@ -61,22 +57,22 @@ export default Example;
 
 const cards = [
   {
-    url: pic,
+    url: StudentUnion,
     title: "Title 1",
     id: 1,
   },
   {
-    url: pic,
+    url: ACRobotics,
     title: "Title 2",
     id: 2,
   },
   {
-    url: pic,
+    url: ESS,
     title: "Title 3",
     id: 3,
   },
   {
-    url: pic,
+    url: WEC,
     title: "Title 4",
     id: 4,
   },
@@ -85,14 +81,14 @@ const cards = [
     title: "Title 5",
     id: 5,
   },
-  {
-    url: pic,
-    title: "Title 6",
-    id: 6,
-  },
-  {
-    url: pic,
-    title: "Title 7",
-    id: 7,
-  },
+  //   {
+  //     url: pic,
+  //     title: "Title 6",
+  //     id: 6,
+  //   },
+  //   {
+  //     url: pic,
+  //     title: "Title 7",
+  //     id: 7,
+  //   },
 ];
