@@ -1,17 +1,17 @@
 import { faGlobe } from "@fortawesome/free-solid-svg-icons"; // Import the globe icon
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import HorizontalScroll from "../../Components/horizontal-scroll";
+import { HoverLinks } from "../../Components/hoverlinks";
 import Navbar from "../../Components/navbar";
-
 import "./style.css";
 
 const Homepage = () => {
   return (
     <div>
       <Navbar />
-
       {/* Hero Section */}
-      <div className="hero ">
+      <div className="hero">
         <div className="hero-content">
           <div className="hero-location">
             <p>Located in Calgary</p>
@@ -23,14 +23,9 @@ const Homepage = () => {
               />
             </span>
           </div>
-          {/* <div className="hero-career">
-            <p>Software Engineer</p>
-          </div> */}
           <h1>Debojeet Dam</h1>
-          {/* <p>SOFTWARE ENGINEER | SCHULICH SCHOOL OF ENGINEERING</p> */}
         </div>
       </div>
-
       {/* About Section */}
       <div className="about-content" id="about">
         <div className="about-text">
@@ -50,18 +45,24 @@ const Homepage = () => {
           <button className="button">About Me</button>
         </div>
       </div>
-
       {/* Linebreak */}
       <hr className="section-divider" />
-
       {/* Projects Section */}
-      <div className="projects-content" id="projects">
+      <div className="projects" id="projects">
         <div className="projects-heading">
           <h2>
             Some of my projects/<span className="exponent">(4)</span>
           </h2>
         </div>
+        <div className="projects-content">
+          <HoverLinks />
+        </div>
+        <div className="project-button">
+          <button className="button-2">More Work</button>
+        </div>
       </div>
+      {/* Experience Section */}
+      <HorizontalScroll /> {/* Add the ExperienceComponent here */}
     </div>
   );
 };
