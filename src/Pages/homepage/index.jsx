@@ -51,7 +51,7 @@ const Homepage = () => {
       <div className="projects" id="projects">
         <div className="projects-heading">
           <h2>
-            Some of my projects/<span className="exponent">(4)</span>
+            Selected Projects/<span className="exponent">(4)</span>
           </h2>
         </div>
         <div className="projects-content">
@@ -62,7 +62,9 @@ const Homepage = () => {
         </div>
       </div>
       {/* Experience Section */}
-      <HorizontalScroll /> {/* Add the ExperienceComponent here */}
+      <div>
+        <HorizontalScroll />
+      </div>
     </div>
   );
 };
