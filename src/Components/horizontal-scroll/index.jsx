@@ -21,7 +21,7 @@ const HorizontalScrollCarousel = () => {
     target: targetRef,
   });
 
-  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-50%"]);
+  const x = useTransform(scrollYProgress, [0, 1], ["1%", "-55%"]);
 
   return (
     <section ref={targetRef} className="carousel-section">
@@ -38,18 +38,25 @@ const HorizontalScrollCarousel = () => {
 
 const Card = ({ card }) => {
   return (
-    <div key={card.id} className="card">
-      <div
-        style={{
-          backgroundImage: `url(${card.url})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-        className="card-image"></div>
-      <div className="card-text">
-        <p className="card-title">{card.title}</p>
+    <a href={card.link} key={card.id} className="card-link">
+      <div className="card">
+        <div
+          style={{
+            backgroundImage: `url(${card.url})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+          className="card-image"></div>
+        <div className="card-text">
+          <motion.p
+            className="card-title"
+            whileHover={{ scale: 1.5 }} // Apply spring effect when hovered
+          >
+            {card.title}
+          </motion.p>
+        </div>
       </div>
-    </div>
+    </a>
   );
 };
 
@@ -59,36 +66,31 @@ const cards = [
   {
     url: StudentUnion,
     title: "Title 1",
+    link: "/url-for-card-1",
     id: 1,
   },
   {
     url: ACRobotics,
     title: "Title 2",
+    link: "/url-for-card-2",
     id: 2,
   },
   {
     url: ESS,
     title: "Title 3",
+    link: "/url-for-card-3",
     id: 3,
   },
   {
     url: WEC,
     title: "Title 4",
+    link: "/url-for-card-4",
     id: 4,
   },
   {
     url: pic,
     title: "Title 5",
+    link: "/url-for-card-5",
     id: 5,
   },
-  //   {
-  //     url: pic,
-  //     title: "Title 6",
-  //     id: 6,
-  //   },
-  //   {
-  //     url: pic,
-  //     title: "Title 7",
-  //     id: 7,
-  //   },
 ];

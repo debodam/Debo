@@ -8,3 +8,5 @@ npm i --save @awesome.me/kit-KIT_CODE
 npm i --save @fortawesome/react-fontawesome@latest
 npm install @fortawesome/free-solid-svg-icons
 npm install react-parallax
+npm install gsap
+npm install @gsap/react

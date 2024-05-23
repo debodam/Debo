@@ -64,6 +64,13 @@
   z-index: 10;
   display: grid;
   place-items: center;
+  opacity: 0; /* Initially hide the text */
+  transition: opacity 0.3s ease; /* Add transition for smoother effect */
+  backdrop-filter: blur(10px); /* Apply blur effect to the text container */
+}
+
+.card:hover .card-text {
+  opacity: 1; /* Show the text on hover */
 }
 
 .card-title {

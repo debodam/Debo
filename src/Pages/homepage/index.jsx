@@ -1,7 +1,6 @@
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { Parallax } from "react-parallax";
 import HorizontalScroll from "../../Components/horizontal-scroll";
 import { HoverLinks } from "../../Components/hoverlinks";
 import Navbar from "../../Components/navbar";
@@ -12,24 +11,22 @@ const Homepage = () => {
     <div>
       <Navbar />
       {/* Hero Section */}
-      <Parallax bgImage="/path/to/hero-image.jpg" strength={300}>
-        <div className="hero">
-          <div className="hero-content">
-            <div className="hero-location">
-              <p>Located in Calgary</p>
-              <span className="icon-wrapper">
-                <FontAwesomeIcon
-                  icon={faGlobe}
-                  style={{ fontSize: "0.5em" }}
-                  className="fa-icon globe-icon"
-                />
-              </span>
-            </div>
-            {/* <h1 className="moving-header">Debojeet Dam</h1> */}
-            <h1>Debojeet Dam</h1>
+      <div className="hero">
+        <div className="hero-content">
+          <div className="hero-location">
+            <p>Located in Calgary</p>
+            <span className="icon-wrapper">
+              <FontAwesomeIcon
+                icon={faGlobe}
+                style={{ fontSize: "0.5em" }}
+                className="fa-icon globe-icon"
+              />
+            </span>
           </div>
+          {/* <h1 className="moving-header">Debojeet Dam</h1> */}
+          <h1>Debojeet Dam</h1>
         </div>
-      </Parallax>
+      </div>
 
       {/* About Section */}
       <div className="about-content" id="about">
